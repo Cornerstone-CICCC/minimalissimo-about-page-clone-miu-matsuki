@@ -52,3 +52,5 @@ You are not provided with any `index.html` or `styles.css` file, so you have to 
 
 1. Push your final code to the `main` branch of this repo.
 2. Add deployed link in this `README.md` file (Netlify or Vercel)
+
+https://minimalissimo-clone.netlify.app/
