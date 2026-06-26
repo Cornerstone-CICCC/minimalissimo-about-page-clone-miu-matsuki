@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0px;
+}
+
+
+/* related of link */
+
+a{
+  text-decoration: none;
+}
+
+.gray-text{
+  color: gray;
+}
+
+a.gray-text:hover{
+  color: black;
+}
+
+.black-text{
+  color: black;
+}
+
+.black-text:hover{
+  color: gray;
+}
+
+/* font */
+h1{font-size: 20px;}
+p,span,a{font-size: 10px;}
+
+/* layout */
+
+header{
+  padding: 16px;
+}
+
+main{
+  padding: 40px 16px 0;
+}
+
+footer{
+  padding: 40px 16px 0;
+  background-color: rgb(236, 236, 236);
+  /* display: flex; */
+  /* align-items: flex-end; */
+}
+
+
+/* .container-link{
+
+}
+
+.container-input{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: calc((100%-8px)/2);
+}
+
+@media (min-width: 600px){
+  .container-input{
+  width: calc((100%-8px)/2);
+}
+} */
