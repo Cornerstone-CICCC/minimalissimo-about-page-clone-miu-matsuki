@@ -44,12 +44,20 @@ a.gray-text:hover{
 }
 
 /* font */
-h1{font-size: 20px;}
+h1{
+  font-size: 20px;
+  margin-bottom: 32px;
+}
 p,span,a{font-size: 10px;}
 
 /* ==========================================
    3. Layout Sections
    ========================================== */
+.breadcrumb{
+  font-size: 14px;
+  margin-bottom: 60px;
+}
+
 
 .contact-info{
   display: flex;
@@ -57,9 +65,19 @@ p,span,a{font-size: 10px;}
   gap:32px;
   margin-bottom: 60px;
 }
-header{
-  padding: 16px;
+
+.contact-info div span{
+  display: block;
+  margin-bottom: 10px;
 }
+
+.social{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
 
 main{
   padding: 40px 16px 0;
@@ -92,17 +110,60 @@ footer{
 
 
 /* input */
-input, button{
-  width: full;
-  height: 50px;
-  border: 1px;
-  /* background-color: #efefef; */
-  background-color: red;
-  border-radius: 10%;
+
+.newsletter-section{
+  /* display: flex; */
+  /* margin-left: auto; */
+  max-width: 100%;
 }
 
-.container-input button:hover{
+.newsletter-form{
+  display: grid;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+
+input, button{
+  width: full;
+  height: 42px;
+  border: 1px;
+  background-color: #efefef;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.newsletter-form button:hover{
   background-color: black;
   color: white;
 }
 
+.container-link{
+padding: 30px 0;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 5px;
+}
+
+footer{
+ display: grid;
+flex-direction: column;
+align-items: flex-start;
+gap:10px;
+}
+/* ==========================================
+   6. Responsive
+   ========================================== */
+   
+@media (min-width: 768px) {
+  .contact-info{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .newsletter-section{
+  max-width: 50%;
+  width: 100%;
+  margin-left: auto;
+  padding: 80px;
+}
+  
+}
