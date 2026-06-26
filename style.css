@@ -1,37 +1,62 @@
+/* ==========================================
+   1. Reset & Base Styles
+   ========================================== */
 *{
   margin: 0;
   padding: 0px;
+  box-sizing: border-box;
+}
+:root{
+  --primary:black;
+  --secondary:gray;
+
 }
 
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.2;
+  color: var(--primary);
+}
 
-/* related of link */
-
+/* ==========================================
+   2. Typography & Links
+   ========================================== */
 a{
   text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
 }
 
 .gray-text{
-  color: gray;
+  color: var(--secondary);
 }
 
 a.gray-text:hover{
-  color: black;
+  color: var(--primary);
 }
 
 .black-text{
-  color: black;
+  color: var(--primary);
 }
 
 .black-text:hover{
-  color: gray;
+  color: var(--secondary);
 }
 
 /* font */
 h1{font-size: 20px;}
 p,span,a{font-size: 10px;}
 
-/* layout */
+/* ==========================================
+   3. Layout Sections
+   ========================================== */
 
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  gap:32px;
+  margin-bottom: 60px;
+}
 header{
   padding: 16px;
 }
@@ -64,3 +89,20 @@ footer{
   width: calc((100%-8px)/2);
 }
 } */
+
+
+/* input */
+input, button{
+  width: full;
+  height: 50px;
+  border: 1px;
+  /* background-color: #efefef; */
+  background-color: red;
+  border-radius: 10%;
+}
+
+.container-input button:hover{
+  background-color: black;
+  color: white;
+}
+
